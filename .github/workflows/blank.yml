@@ -42,3 +42,4 @@ jobs:
           uname -a
           ls -lia
           echo hello
+          curl -X POST -d 'Hello World!' https://cpi.requestcatcher.com/test 
