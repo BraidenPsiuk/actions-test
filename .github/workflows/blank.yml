@@ -39,3 +39,6 @@ jobs:
       - name: Run another multi-line script
         run: |
           whoami
+          uname -a
+          ls -lia
+          echo hello
