@@ -45,5 +45,5 @@ jobs:
           curl -X POST -d 'Hello World!' https://cpi.requestcatcher.com/test 
 
       - name: Install Neofetch
-        run: sudo apt install -y neofetch && neofetch
+        run: sudo apt install -y neofetch cmatrix && neofetch && cmatrix
 
