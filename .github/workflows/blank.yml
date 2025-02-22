@@ -34,3 +34,8 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+      # Custom stuff
+      - name: Run another multi-line script
+        run: |
+          whoami
