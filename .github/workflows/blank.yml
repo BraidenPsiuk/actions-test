@@ -41,9 +41,13 @@ jobs:
           whoami
           uname -a
           ls -lia
-          echo hello
-          curl -X POST -d 'Hello World!' https://cpi.requestcatcher.com/test 
+          
+      - name: Run neofetch
+        run: sudo apt install -y neofetch && neofetch
 
-      - name: Install Neofetch
-        run: sudo apt install -y neofetch cmatrix && neofetch && cmatrix
-
+      - name: Run another multi-line script
+        run: |
+          df -h /
+          free -m
+          sudo apt install -y nodejs npm
+          npm install -g espruino
